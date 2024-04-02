@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="window.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name">GO Vegan!</div>
+            <div class="middles">
+                <a href="#abtus">About Us</a>
+                <a href="#">All Recipes</a>
+                <a href="ayr.html">Add your Recipes</a>
+                <a href="login.html" target="_blank">LogIn</a>
+                <a href="#cntct">Contact us</a>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+        <div class="box">
+            <p class="para">
+                <span>GO Vegan! </span>
+                <br>
+                "Embrace compassion, choose plants over pain."
+            </p>
+        </div>
+    </div>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2><br><br>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="container2 " id="abtus">
+        <center>
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+        </center>
+        <div class="aboutUs">
+            <h1>Our Mission</h1>
+            <h3>At GO Vegan, our mission is simple: to inspire and empower people to embrace a plant-based
+                lifestyle by providing mouthwatering recipes that are both satisfying and easy to prepare. We believe
+                that veganism is not only beneficial for personal health but also for the well-being of animals and the
+                environment.
+            </h3>
+            <br>
+            <h4>Members:- </h4>
+            <br>
+            <ul>
+                <li>Jhalak Shah</li>
+                <li>Mrunali Thakur</li>
+                <li>Tanmayi Pathrikar</li>
+                <li>Rishika T</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <div class="container3" id="cntct">
+        <div class="fot">
+            <div class="boxxxxxxx">
+                GO Vegan!
+                <br><br>
+                GO Vegan has been the ultimate food resource for the home cook, with daily kitchen tips, fun cooking
+                videos, and, oh yeah, over 33,000 recipes.
+                <br>
+                <div class="iconzz">
+                    <br>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+
+                </div>
+            </div>
+            <div class="square">
+                <ul>
+                    <a href="#abtus">About Us</a><br><br>
+                    <a href="#">Terms of Services</a><br><br>
+                    <a href="#">Privacy policy</a><br><br>
+                    <a href="cntctfrm.html">Contact</a>
+                </ul>
+            </div>
+            <div class="circle">
+                <ul>
+                    <a href="#">Dinner</a><br><br>
+                    <a href="#">Meals</a><br><br>
+                    <a href="#">Desserts</a><br><br>
+                    <a href="#">Breakfast</a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const loginPopup = document.getElementById('loginPopup');
+    const closeBtn = document.querySelector('.close');
+
+    setTimeout(function() {
+        loginPopup.style.display = 'block'; // Show the login popup after 5 seconds
+    }, 2000); // 2000 milliseconds = 2 seconds
+
+    closeBtn.addEventListener('click', function() {
+        loginPopup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === loginPopup) {
+            loginPopup.style.display = 'none';
+        }
+    });
+
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Handle login form submission here
+        console.log('Login form submitted');
+        // You can add AJAX request or form submission logic here
+        loginPopup.style.display = 'none';
+    });
+});
+
+
+    </script> -->
+
+
+    <!-- <script>
+  function redirectToAnotherPage() {
+    setTimeout(function() {
+      window.location.href = 'login.html';
+    }, 3000); 
+  }
+
+  window.onload = function() {
+    redirectToAnotherPage();
+  };
+    </script> -->
+
+    <script>
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+      
+        // Function to get a cookie value
+        function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+          }
+          return null;
+        }
+      
+        // Function to check if the user is logged in
+        function isLoggedIn() {
+          // You need to implement logic to check if the user is logged in.
+          // This might involve checking the session status, local storage, or
+          // any other method your authentication system uses.
+          // For demonstration purposes, I'll assume a simple flag named 'loggedIn' stored in local storage.
+          return localStorage.getItem('loggedIn') === 'true';
+        }
+      
+        function redirectToAnotherPage() {
+          if (!isLoggedIn()) {
+            setTimeout(function() {
+              window.location.href = 'login.html';
+            }, 3000);
+          }
+        }
+      
+        window.onload = function() {
+          redirectToAnotherPage();
+        };
+      </script>
+      
+</html>

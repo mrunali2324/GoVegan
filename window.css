@@ -1,0 +1,277 @@
+.divi {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 255); 
+    margin-left: 70px;
+    cursor: pointer;
+    margin-top: 60px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.divMain {
+    /* background-color: rgba(255, 230, 187, 0.777);  */
+    border-radius: 10px;
+}
+body{
+background-image: url("tp.avif");
+
+}
+h4{
+margin: 40px;
+}
+.img1{
+    margin-top: 10px;
+    border: 3px solid black;
+
+}
+img{
+    margin-top: 60px;
+    margin-left: 70px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+h1{
+    text-align:center;
+    color:rgb(248, 244, 248);
+    text-decoration: underline  ;
+    background-color: #101010;
+    
+}
+h1:hover{
+    text-shadow: 2px 2px 4px #f8faf8;
+    font-size:40px ;
+    transition: 2s;
+    cursor: pointer;
+
+}
+
+figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    font-weight: bold;
+
+
+
+}
+
+.divi i {
+        position: absolute;
+        margin-left: 255px;
+        margin-top: 10px;
+        font-size: 30px;
+}
+#i:hover{
+    color: rgb(0, 119, 255);
+}
+.divi:hover{
+border-radius: 40px;
+transition: 1s;
+box-shadow: 2px 2px 10px 10px #101010;
+}
+#i {
+position: fixed;
+top: 10px;
+left: 10px;
+font-size: 50px;
+color: aliceblue;
+}
+#text{
+position: fixed;
+top: 12px;
+left: 10px;
+font-size: 20px; 
+color:white; 
+}
+
+
+/* body{
+    background-color: rgb(255, 255, 255);
+} */
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+/* body{
+    background-image: url("leaves.jpg");
+    background-size: cover;
+}*/
+.divsize{
+    height: 100;
+    width: 300;
+    /* background-color: rgb(252, 252, 143); */
+    border: 2px solid black;
+    cursor: pointer;
+   
+}
+.div2{
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.div3{
+    border: 2px solid black;
+    cursor: pointer;
+    margin-top: 2px;
+}
+li{
+    font-size: medium;
+}
+h3{
+    font-weight:600;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+ h2{
+    font-size: large;
+    margin-left: 5px;
+        text-align: center;
+
+}
+li{
+    font-size: large;
+    font-weight: 600;
+}
+li:hover{
+    text-shadow: 2px 2px 2px grey;
+}
+
+img:hover{
+    box-shadow:0px 1px 10px 10px rgb(235, 235, 233) ;
+    border-radius: 20px;
+    transition: 2s;
+    
+}
+video {
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    transition: 200ms ease-in-out;
+    width: auto; /* Set the width to auto to adjust according to image size */
+    height: auto; /* Set the height to auto to adjust according to image size */
+    max-width: 100%; /* Limit the maximum width of the modal */
+    max-height: 90%; /* Limit the maximum height of the modal */
+    overflow: auto; /* Enable scrolling if the image exceeds modal dimensions */
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    
+}
+
+.modal.active{
+    transform: translate(-50% , -50%) scale(1);
+}
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+}
+ .modal-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+ .modal-body{
+    padding: 10px 15px;
+ }
+
+ #overlay{
+    position: fixed;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0 ,0.5 );
+    pointer-events: none;
+ }
+
+ #overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+
+/*Media query*/
+
+
+
+@media only screen and (max-width: 768px) {
+    .divi {
+      width: 200px; 
+      height: 200px; 
+      margin-left: 20px; 
+      margin-top: 20px; 
+    }
+  
+    img {
+      margin-top: 10px; 
+      margin-left: 20px; 
+      height: 150px; 
+      width: 150px; 
+    }
+  
+    h1 {
+      font-size: 24px; 
+    }
+  
+    h3 {
+      font-size: 16px; 
+      margin-left: 5px; 
+    }
+  
+    .modal {
+      width: 90%;
+      height: 90%; 
+    }
+  
+    video {
+      width: 90%; 
+      height: auto;
+    }
+    figcaption{
+        font-size: 15px;
+    }
+  }
+  
